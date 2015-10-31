@@ -117,13 +117,13 @@
 
     <admin>
         <routers>
-            <hyperpay>
-                <use>admin</use>
-                <args>
-                    <module>Hyperpay</module>
-                    <frontName>hyperpay</frontName>
-                </args>
-            </hyperpay>
+		<adminhtml>
+    			<args>
+        			<modules>
+            				<hyperpay before="Mage_Adminhtml">Hyperpay_Adminhtml</hyperpay>
+        			</modules>
+    			</args>
+		</adminhtml>
         </routers>
     </admin>
 
